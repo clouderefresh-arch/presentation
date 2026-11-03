@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<title>ОЛС — варианты иллюстраций транспорта</title>
+<style>
+@font-face { font-family: Inter; src: url("file:///usr/share/fonts/truetype/macos/Inter-Regular.ttf"); font-weight: 400; }
+@font-face { font-family: Inter; src: url("file:///usr/share/fonts/truetype/macos/Inter-Medium.ttf"); font-weight: 500; }
+@font-face { font-family: Inter; src: url("file:///usr/share/fonts/truetype/macos/Inter-SemiBold.ttf"); font-weight: 600; }
+@font-face { font-family: Inter; src: url("file:///usr/share/fonts/truetype/macos/Inter-Bold.ttf"); font-weight: 700; }
+
+:root {
+  --navy: #253446;
+  --muted: #5c6d7c;
+  --red: #d02028;
+  --line: #d7e0e7;
+  --panel: #f4f7f8;
+  --soft: #e4edf2;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+@page { size: 1280px 720px; margin: 0; }
+
+html, body {
+  background: #fff;
+  color: var(--navy);
+  font-family: Inter, "Noto Sans", sans-serif;
+  -webkit-print-color-adjust: exact;
+  print-color-adjust: exact;
+}
+
+.page {
+  width: 1280px;
+  height: 720px;
+  position: relative;
+  overflow: hidden;
+  background: #fff;
+  break-after: page;
+  page-break-after: always;
+}
+
+.top {
+  position: absolute;
+  top: 36px;
+  left: 56px;
+  right: 56px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 14px;
+  border-bottom: 1px solid var(--line);
+}
+
+.brand {
+  font-weight: 700;
+  font-size: 15px;
+  letter-spacing: 0.14em;
+  color: var(--navy);
+}
+
+.brand span { color: var(--red); }
+
+.kicker {
+  font-weight: 500;
+  font-size: 12px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.cover-title {
+  position: absolute;
+  top: 148px;
+  left: 56px;
+  width: 760px;
+  font-weight: 600;
+  font-size: 64px;
+  line-height: 0.98;
+  letter-spacing: -0.03em;
+}
+
+.cover-lead {
+  position: absolute;
+  top: 310px;
+  left: 56px;
+  width: 620px;
+  font-size: 18px;
+  line-height: 1.45;
+  color: var(--muted);
+}
+
+.thumbs {
+  position: absolute;
+  left: 56px;
+  right: 56px;
+  bottom: 48px;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 16px;
+}
+
+.thumb {
+  background: var(--panel);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.thumb img {
+  display: block;
+  width: 100%;
+  height: 128px;
+  object-fit: contain;
+  background: #fff;
+}
+
+.thumb .meta {
+  padding: 10px 12px 12px;
+  border-top: 1px solid var(--line);
+}
+
+.thumb .num {
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  color: var(--red);
+}
+
+.thumb .name {
+  margin-top: 2px;
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 1.25;
+}
+
+.sheet {
+  display: grid;
+  grid-template-columns: 430px 1fr;
+  height: 720px;
+}
+
+.copy {
+  padding: 36px 40px 40px 56px;
+  display: flex;
+  flex-direction: column;
+}
+
+.copy .top {
+  position: static;
+  left: auto;
+  right: auto;
+  top: auto;
+  margin-bottom: 0;
+}
+
+.num-lg {
+  margin-top: 78px;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  color: var(--red);
+}
+
+h1 {
+  margin-top: 14px;
+  font-size: 40px;
+  font-weight: 600;
+  letter-spacing: -0.03em;
+  line-height: 1.05;
+}
+
+.desc {
+  margin-top: 18px;
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--muted);
+  max-width: 320px;
+}
+
+.fit {
+  margin-top: auto;
+  padding-top: 24px;
+}
+
+.fit .label {
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.fit p {
+  margin-top: 6px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.35;
+  max-width: 300px;
+}
+
+.stage {
+  background: var(--panel);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 36px 28px 36px 12px;
+  position: relative;
+}
+
+.stage img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.rule {
+  position: absolute;
+  left: 0;
+  top: 120px;
+  bottom: 80px;
+  width: 3px;
+  background: var(--red);
+}
+</style>
+</head>
+<body>
+
+<section class="page">
+  <div class="top">
+    <div class="brand">ОЛС <span>·</span> ФАРМАЦЕВТИЧЕСКАЯ ЛОГИСТИКА</div>
+    <div class="kicker">Ноябрь 2026</div>
+  </div>
+  <h1 class="cover-title">Иллюстрации<br>транспорта</h1>
+  <p class="cover-lead">Пять стилей рефрижератора для презентации «Температурные перевозки». Палитра общая: тёмно-синяя кабина, белый кузов, холодный голубой и красная полоса. Можно взять один стиль на все слайды.</p>
+  <div class="thumbs">
+    <div class="thumb">
+      <img src="trucks/01-corporate-vector.jpg" alt="">
+      <div class="meta"><div class="num">01</div><div class="name">Корпоративный вектор</div></div>
+    </div>
+    <div class="thumb">
+      <img src="trucks/02-soft-3d.jpg" alt="">
+      <div class="meta"><div class="num">02</div><div class="name">Мягкий 3D</div></div>
+    </div>
+    <div class="thumb">
+      <img src="trucks/03-line-art.jpg" alt="">
+      <div class="meta"><div class="num">03</div><div class="name">Линейный чертёж</div></div>
+    </div>
+    <div class="thumb">
+      <img src="trucks/04-isometric-dual-zone.jpg" alt="">
+      <div class="meta"><div class="num">04</div><div class="name">Изометрия, две зоны</div></div>
+    </div>
+    <div class="thumb">
+      <img src="trucks/05-studio.jpg" alt="">
+      <div class="meta"><div class="num">05</div><div class="name">Студийная иллюстрация</div></div>
+    </div>
+  </div>
+</section>
+
+<section class="page">
+  <div class="sheet">
+    <div class="copy">
+      <div class="top">
+        <div class="brand">ОЛС</div>
+        <div class="kicker">Вариант 01</div>
+      </div>
+      <div class="num-lg">01 / 05</div>
+      <h1>Корпоративный<br>вектор</h1>
+      <p class="desc">Боковой профиль магистральной фуры. Плоский рисунок с кабиной, дисками колёс и холодильной установкой. Читается издалека и не спорит с текстом слайда.</p>
+      <div class="fit">
+        <div class="label">Куда встаёт</div>
+        <p>Обложка и блок про собственный автопарк.</p>
+      </div>
+    </div>
+    <div class="stage">
+      <div class="rule"></div>
+      <img src="trucks/01-corporate-vector.jpg" alt="Корпоративный вектор">
+    </div>
+  </div>
+</section>
+
+<section class="page">
+  <div class="sheet">
+    <div class="copy">
+      <div class="top">
+        <div class="brand">ОЛС</div>
+        <div class="kicker">Вариант 02</div>
+      </div>
+      <div class="num-lg">02 / 05</div>
+      <h1>Мягкий 3D</h1>
+      <p class="desc">Городской рефрижератор в объёме: мягкий свет, матовые поверхности, округлая кабина. Спокойный современный вид без технической перегрузки.</p>
+      <div class="fit">
+        <div class="label">Куда встаёт</div>
+        <p>Слайд о доставке по Москве и области.</p>
+      </div>
+    </div>
+    <div class="stage">
+      <div class="rule"></div>
+      <img src="trucks/02-soft-3d.jpg" alt="Мягкий 3D">
+    </div>
+  </div>
+</section>
+
+<section class="page">
+  <div class="sheet">
+    <div class="copy">
+      <div class="top">
+        <div class="brand">ОЛС</div>
+        <div class="kicker">Вариант 03</div>
+      </div>
+      <div class="num-lg">03 / 05</div>
+      <h1>Линейный<br>чертёж</h1>
+      <p class="desc">Один тёмно-синий контур и тонкая красная линия по кузову. Строгий тон и много воздуха — рисунок держится рядом со схемами и документами.</p>
+      <div class="fit">
+        <div class="label">Куда встаёт</div>
+        <p>Слайды про контроль качества и документооборот.</p>
+      </div>
+    </div>
+    <div class="stage">
+      <div class="rule"></div>
+      <img src="trucks/03-line-art.jpg" alt="Линейный чертёж">
+    </div>
+  </div>
+</section>
+
+<section class="page">
+  <div class="sheet">
+    <div class="copy">
+      <div class="top">
+        <div class="brand">ОЛС</div>
+        <div class="kicker">Вариант 04</div>
+      </div>
+      <div class="num-lg">04 / 05</div>
+      <h1>Изометрия,<br>две зоны</h1>
+      <p class="desc">Машина в три четверти. Кузов разделён на холодную и контролируемую зоны: голубая половина и тёплая.</p>
+      <div class="fit">
+        <div class="label">Куда встаёт</div>
+        <p>Слайд «Два режима. Одна машина».</p>
+      </div>
+    </div>
+    <div class="stage">
+      <div class="rule"></div>
+      <img src="trucks/04-isometric-dual-zone.jpg" alt="Изометрия с двумя зонами">
+    </div>
+  </div>
+</section>
+
+<section class="page">
+  <div class="sheet">
+    <div class="copy">
+      <div class="top">
+        <div class="brand">ОЛС</div>
+        <div class="kicker">Вариант 05</div>
+      </div>
+      <div class="num-lg">05 / 05</div>
+      <h1>Студийная<br>иллюстрация</h1>
+      <p class="desc">Предметный свет и пропорции настоящей фуры. Самый конкретный вид автопарка: новая машина, чистый кузов, без лишней графики.</p>
+      <div class="fit">
+        <div class="label">Куда встаёт</div>
+        <p>Обложка или акцент на слайде про автопарк.</p>
+      </div>
+    </div>
+    <div class="stage">
+      <div class="rule"></div>
+      <img src="trucks/05-studio.jpg" alt="Студийная иллюстрация">
+    </div>
+  </div>
+</section>
+
+</body>
+</html>
